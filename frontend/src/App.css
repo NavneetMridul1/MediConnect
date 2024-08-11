@@ -288,7 +288,14 @@ font-weight: bold;
   font-size: 24px;
   margin-bottom: 30px;
   background: linear-gradient(135deg, rgb(138, 19, 19), rgb(49, 49, 49));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.form-component button:active {
+  transform: scale(0.95);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .form-component .wrapper {
   display: flex;
   gap: 50px;
@@ -509,6 +516,12 @@ footer .content div:last-child div svg {
   min-height: 360px;
   margin: 0 10px;
   text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(0.9);
+  box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
 }
 .card img {
   position: absolute;
@@ -587,15 +600,20 @@ nav .btn {
   font-weight: 600;
   z-index: 2;
 }
-nav .logoutBtn {
-  background: linear-gradient(135deg, rgb(138, 19, 19), rgb(49, 49, 49));
-}
-nav .loginBtn {
-  background: linear-gradient(135deg, rgb(138, 19, 19), rgb(49, 49, 49));
-}
+nav .logoutBtn,
+nav .loginBtn,
 nav .registerBtn {
   background: linear-gradient(135deg, rgb(138, 19, 19), rgb(49, 49, 49));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+nav .logoutBtn:active,
+nav .loginBtn:active,
+nav .registerBtn:active {
+  transform: scale(0.95);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 nav .hamburger {
   display: none;
 }
