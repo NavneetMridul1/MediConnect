@@ -21,7 +21,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/v1/user/patient/me",
+          `${import.meta.env.VITE_BACKEND_LINK}/api/v1/user/patient/me`,
           {
             withCredentials: true,
           }
@@ -40,7 +40,7 @@ const App = () => {
     <>
       <Router>
         <Navbar />
-        <Routes>
+        <Routes> 
           <Route path="/" element={<Home />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/about" element={<AboutUs />} />

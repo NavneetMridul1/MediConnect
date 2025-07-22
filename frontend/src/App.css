@@ -422,7 +422,7 @@ footer .content div {
   flex: 1;
 }
 footer .content div:nth-child(3) {
-  flex: 2;
+  flex: 1.2;
 }
 footer .content div h4 {
   font-weight: 700;
@@ -445,7 +445,7 @@ footer .content div ul li span {
   color: rgb(90, 78, 78);
 }
 footer .content div ul li span:first-child {
-  width: 150px;
+  width: 130px;
   display: inline-block;
 }
 

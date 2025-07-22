@@ -19,7 +19,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/user/login",
+          `${import.meta.env.VITE_BACKEND_LINK}/api/v1/user/login`,
           { email, password, role: "Admin" },
           {
             withCredentials: true,

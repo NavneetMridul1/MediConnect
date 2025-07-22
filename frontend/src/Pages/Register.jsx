@@ -27,7 +27,7 @@ const Register = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/user/patient/register",
+          `${import.meta.env.VITE_BACKEND_LINK}/api/v1/user/patient/register`,
           { firstName, lastName, email, phone, aadhaarno, dob, gender, password, confirmPassword }, // Updated to use aadhaarno
           {
             withCredentials: true,

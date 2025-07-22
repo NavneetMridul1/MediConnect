@@ -54,9 +54,10 @@ const Footer = () => {
           <div>
             <h4>Quick Links</h4>
             <ul>
-              <Link to={"/"}>Home</Link>
-              <Link to={"/appointment"}>Appointment</Link>
-              <Link to={"/about"}>About Us</Link>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/appointment">Appointment</Link></li>
+              <li><Link to="/about">About Us</Link></li>
+              <li><a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer">Admin</a></li>
             </ul>
           </div>
           <div>
