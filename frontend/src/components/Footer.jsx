@@ -57,7 +57,15 @@ const Footer = () => {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/appointment">Appointment</Link></li>
               <li><Link to="/about">About Us</Link></li>
-              <li><a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer">Admin</a></li>
+              <li><a href="http://localhost:5174/login" target="_blank" rel="noopener noreferrer" style={{
+                     background: 'linear-gradient(135deg, rgb(138, 19, 19), rgb(49, 49, 49))',
+                     color: 'white',
+                     padding: '10px 20px',
+                     borderRadius: '10px',
+                     fontWeight: 'bold',
+                     textDecoration: 'none',
+                     display: 'inline-block',
+                     textAlign: 'center'}}>Admin Portal</a></li>
             </ul>
           </div>
           <div>
