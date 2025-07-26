@@ -12,7 +12,7 @@ const Register = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [aadhaarno, setAadhaarNo] = useState(""); // Renamed from nic to aadhaarno
+  const [aadhaarno, setAadhaarNo] = useState("");
   const [dob, setDob] = useState("");
   const [gender, setGender] = useState("");
   const [password, setPassword] = useState("");
