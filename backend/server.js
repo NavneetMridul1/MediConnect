@@ -1,9 +1,13 @@
 import { config } from 'dotenv';
 import app from './app.js';
 import cloudinary from 'cloudinary';
+import { dbConnection } from './config/dbConnection.js';
 
-// Load environment variables
+// Load env variables
 config({ path: './config.env' });
+
+// Connect to MongoDB ✅
+dbConnection();
 
 // Configure Cloudinary
 cloudinary.v2.config({
@@ -15,5 +19,25 @@ cloudinary.v2.config({
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`🚀 Server is running on port ${PORT}`);
 });
+
+// import { config } from 'dotenv';
+// import app from './app.js';
+// import cloudinary from 'cloudinary';
+
+// // Load environment variables
+// config({ path: './config.env' });
+
+// // Configure Cloudinary
+// cloudinary.v2.config({
+//   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+//   api_key: process.env.CLOUDINARY_API_KEY,
+//   api_secret: process.env.CLOUDINARY_API_SECRET,
+// });
+
+// const PORT = process.env.PORT || 5000;
+
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
