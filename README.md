@@ -4,7 +4,7 @@ A full-stack **Hospital Management System** built with the **MERN Stack** (Mongo
 - ✅ Secure JWT-based authentication
 - 👩‍⚕️ Dual frontends for patients and admins
 - 🚀 Scalable architecture
-- 🌐 Live Demo: [medi-connect-nzt2.vercel.app](https://medi-connect-nzt2.vercel.app)
+- 🌐 Live Demo: [Visit MediConnect](https://medi-connect-nzt2.vercel.app)
 
 ---
 
@@ -24,7 +24,7 @@ A full-stack **Hospital Management System** built with the **MERN Stack** (Mongo
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend:** React
+- **Frontend:** HTML, CSS, JavaScript, React
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 - **Deployment:** Vercel & Render
